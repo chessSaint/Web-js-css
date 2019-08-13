@@ -1,0 +1,18 @@
+﻿<!DOCTYPE html>
+<html style="height: 100%">
+   <head>
+       <meta charset="utf-8">
+   </head>
+   <body style="height: 100%; margin: 0">
+       <div id="container" style="height: 100%"></div>
+
+       <script type="text/javascript">
+        
+           function dataJson(data) {
+               document.getElementById('container').innerHTML = data.data;
+           }
+           
+       </script>
+       <script type="text/javascript" src="ceshi.json?cb=dataJson"></script> <!--注意：这个引用必须放在最后！！！-->
+   </body>
+</html>
